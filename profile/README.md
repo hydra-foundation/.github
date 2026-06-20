@@ -28,18 +28,18 @@ The dependency graph flows downward — `core` knows nothing of the layers above
 
 | Package | Role |
 | --- | --- |
-| [**`hydra/core`**](#) | The foundation: application object, container & service-provider contracts, typed environment loading. Defines interfaces only — concretes are bound by the app. |
-| [**`hydra/http`**](#) | PSR-7 / PSR-15 HTTP layer — request lifecycle, routing, and the middleware pipeline. |
-| [**`hydra/session`**](#) | Session handling exposed through PSR-15 middleware. |
-| [**`hydra/database`**](#) | A thin PDO-based data layer. |
-| [**`hydra/validation`**](#) | Zero-dependency input validation. |
-| [**`hydra/view`**](#) | Native PHP templating — no compile step, no new syntax. |
-| [**`hydra/log`**](#) | A PSR-3 logger. |
-| [**`hydra/auth`**](#) | Authentication, built on the HTTP and session packages. |
-| [**`hydra/authorization`**](#) | Ability-based authorization on top of `auth`. |
-| [**`hydra/csrf`**](#) | CSRF protection delivered as middleware. |
-| [**`hydra/console`**](#) | The CLI surface, powered by Symfony Console. |
-| [**`hydra/app`**](#) | The application skeleton — the composition root every Hydra project starts from. |
+| [**`hydra/core`**](https://github.com/hydra-foundation/core) | The foundation: application object, container & service-provider contracts, typed environment loading. Defines interfaces only — concretes are bound by the app. |
+| [**`hydra/http`**](https://github.com/hydra-foundation/http) | PSR-7 / PSR-15 HTTP layer — request lifecycle, routing, and the middleware pipeline. |
+| [**`hydra/session`**](https://github.com/hydra-foundation/session) | Session handling exposed through PSR-15 middleware. |
+| [**`hydra/database`**](https://github.com/hydra-foundation/database) | A thin PDO-based data layer. |
+| [**`hydra/validation`**](https://github.com/hydra-foundation/validation) | Zero-dependency input validation. |
+| [**`hydra/view`**](https://github.com/hydra-foundation/view) | Native PHP templating — no compile step, no new syntax. |
+| [**`hydra/log`**](https://github.com/hydra-foundation/log) | A PSR-3 logger. |
+| [**`hydra/auth`**](https://github.com/hydra-foundation/auth) | Authentication, built on the HTTP and session packages. |
+| [**`hydra/authorization`**](https://github.com/hydra-foundation/authorization) | Ability-based authorization on top of `auth`. |
+| [**`hydra/csrf`**](https://github.com/hydra-foundation/csrf) | CSRF protection delivered as middleware. |
+| [**`hydra/console`**](https://github.com/hydra-foundation/console) | The CLI surface, powered by Symfony Console. |
+| [**`hydra/app`**](https://github.com/hydra-foundation/app) | The application skeleton — the composition root every Hydra project starts from. |
 
 ## Principles
 
@@ -55,7 +55,7 @@ The dependency graph flows downward — `core` knows nothing of the layers above
 
 ## Getting started
 
-Every project begins from the [`hydra/app`](#) skeleton:
+Every project begins from the [`hydra/app`](https://github.com/hydra-foundation/app) skeleton:
 
 ```bash
 cp .env.example .env             # defaults run as-is for local dev
