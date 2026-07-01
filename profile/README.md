@@ -34,6 +34,7 @@ The dependency graph flows downward — `core` knows nothing of the layers above
 | [**`hydra/database`**](https://github.com/hydra-foundation/database) | A thin PDO-based data layer. |
 | [**`hydra/validation`**](https://github.com/hydra-foundation/validation) | Zero-dependency input validation. |
 | [**`hydra/view`**](https://github.com/hydra-foundation/view) | Native PHP templating — no compile step, no new syntax. |
+| [**`hydra/event`**](https://github.com/hydra-foundation/event) | A PSR-14 event dispatcher. |
 | [**`hydra/log`**](https://github.com/hydra-foundation/log) | A PSR-3 logger. |
 | [**`hydra/auth`**](https://github.com/hydra-foundation/auth) | Authentication, built on the HTTP and session packages. |
 | [**`hydra/authorization`**](https://github.com/hydra-foundation/authorization) | Ability-based authorization on top of `auth`. |
