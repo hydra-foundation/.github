@@ -32,6 +32,7 @@ The dependency graph flows downward — `core` knows nothing of the layers above
 | [**`hydra/http`**](https://github.com/hydra-foundation/http) | PSR-7 / PSR-15 HTTP layer — request lifecycle, routing, and the middleware pipeline. |
 | [**`hydra/session`**](https://github.com/hydra-foundation/session) | Session handling exposed through PSR-15 middleware. |
 | [**`hydra/database`**](https://github.com/hydra-foundation/database) | A thin PDO-based data layer. |
+| [**`hydra/kernel`**](https://github.com/hydra-foundation/kernel) | Default composition root and HTTP plumbing. |
 | [**`hydra/validation`**](https://github.com/hydra-foundation/validation) | Zero-dependency input validation. |
 | [**`hydra/view`**](https://github.com/hydra-foundation/view) | Native PHP templating — no compile step, no new syntax. |
 | [**`hydra/event`**](https://github.com/hydra-foundation/event) | A PSR-14 event dispatcher. |
