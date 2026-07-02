@@ -6,7 +6,7 @@
 
 [![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white)](https://www.php.net/)
 [![PSR](https://img.shields.io/badge/PSR-3%20·%207%20·%2011%20·%2015%20·%2017-4F5B93)](https://www.php-fig.org/psr/)
-[![License](https://img.shields.io/badge/license-MIT-blue)](#)
+[![License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)
 
 </div>
 
@@ -18,10 +18,6 @@ neighbours. The split between **framework mechanism** and **application policy**
 deliberate: the core defines contracts and orchestration, the packages supply the
 mechanism, and your app wires them together at the composition root.
 
-Nothing is hidden. There is no global state to reach for, no service that materializes
-by convention. Everything is bound explicitly into a PSR-11 container and resolved from
-there.
-
 ## Packages
 
 The dependency graph flows downward — `core` knows nothing of the layers above it.
@@ -30,11 +26,14 @@ The dependency graph flows downward — `core` knows nothing of the layers above
 | --- | --- |
 | [**`hydrakit/core`**](https://github.com/hydra-foundation/core) | The foundation: application object, container & service-provider contracts, typed environment loading. Defines interfaces only — concretes are bound by the app. |
 | [**`hydrakit/http`**](https://github.com/hydra-foundation/http) | PSR-7 / PSR-15 HTTP layer — request lifecycle, routing, and the middleware pipeline. |
+| [**`hydrakit/nyholm`**](https://github.com/hydra-foundation/nyholm) | Nyholm PSR-7 / PSR-17 adapter — the default message and factory implementation. |
+| [**`hydrakit/kernel`**](https://github.com/hydra-foundation/kernel) | Default composition root and HTTP plumbing — the framework-side wiring `app` builds on. |
 | [**`hydrakit/session`**](https://github.com/hydra-foundation/session) | Session handling exposed through PSR-15 middleware. |
 | [**`hydrakit/database`**](https://github.com/hydra-foundation/database) | A thin PDO-based data layer. |
 | [**`hydrakit/validation`**](https://github.com/hydra-foundation/validation) | Zero-dependency input validation. |
 | [**`hydrakit/view`**](https://github.com/hydra-foundation/view) | Native PHP templating — no compile step, no new syntax. |
 | [**`hydrakit/log`**](https://github.com/hydra-foundation/log) | A PSR-3 logger. |
+| [**`hydrakit/event`**](https://github.com/hydra-foundation/event) | A PSR-14 event dispatcher and listener provider. |
 | [**`hydrakit/auth`**](https://github.com/hydra-foundation/auth) | Authentication, built on the HTTP and session packages. |
 | [**`hydrakit/authorization`**](https://github.com/hydra-foundation/authorization) | Ability-based authorization on top of `auth`. |
 | [**`hydrakit/csrf`**](https://github.com/hydra-foundation/csrf) | CSRF protection delivered as middleware. |
@@ -73,9 +72,3 @@ Open **http://localhost:8000** and you'll see *Welcome to Hydra*. A full Docker 
 - **PHP 8.2+**
 - **Composer**
 - Optional: **Docker** + Compose for the full local stack
-
----
-
-<div align="center">
-<sub>Built with PHP. No magic — just contracts.</sub>
-</div>
