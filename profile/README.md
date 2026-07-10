@@ -5,7 +5,7 @@
 **A modular PHP framework built on PSR contracts — small packages, sharp boundaries, no magic.**
 
 [![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white)](https://www.php.net/)
-[![PSR](https://img.shields.io/badge/PSR-3%20·%207%20·%2011%20·%2015%20·%2017-4F5B93)](https://www.php-fig.org/psr/)
+[![PSR](https://img.shields.io/badge/PSR-3%20·%207%20·%2011%20·%2014%20·%2015%20·%2017-4F5B93)](https://www.php-fig.org/psr/)
 [![License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)
 
 </div>
@@ -27,6 +27,7 @@ The dependency graph flows downward — `core` knows nothing of the layers above
 | [**`hydrakit/core`**](https://github.com/hydra-foundation/core) | The foundation: application object, container & service-provider contracts, typed environment loading. Defines interfaces only — concretes are bound by the app. |
 | [**`hydrakit/http`**](https://github.com/hydra-foundation/http) | PSR-7 / PSR-15 HTTP layer — request lifecycle, routing, and the middleware pipeline. |
 | [**`hydrakit/nyholm`**](https://github.com/hydra-foundation/nyholm) | Nyholm PSR-7 / PSR-17 adapter — the default message and factory implementation. |
+| [**`hydrakit/php-di`**](https://github.com/hydra-foundation/php-di) | PHP-DI PSR-11 adapter — the default container binding `core`'s contracts. |
 | [**`hydrakit/kernel`**](https://github.com/hydra-foundation/kernel) | Default composition root and HTTP plumbing — the framework-side wiring `app` builds on. |
 | [**`hydrakit/session`**](https://github.com/hydra-foundation/session) | Session handling exposed through PSR-15 middleware. |
 | [**`hydrakit/database`**](https://github.com/hydra-foundation/database) | A thin PDO-based data layer. |
