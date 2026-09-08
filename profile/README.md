@@ -17,8 +17,8 @@ A collection of experimental PHP packages that form the foundation of my PHP fra
 | --- | --- |
 | [**`core`**](https://github.com/hydra-foundation/core) | Application object, container and service-provider contracts, typed environment loading. Interfaces only. |
 | [**`http`**](https://github.com/hydra-foundation/http) | PSR-7 / PSR-15 HTTP layer: request lifecycle, routing, middleware pipeline. |
-| [**`nyholm`**](https://github.com/hydra-foundation/nyholm) | Nyholm PSR-7 / PSR-17 adapter — the default message and factory implementation. |
-| [**`php-di`**](https://github.com/hydra-foundation/php-di) | PHP-DI PSR-11 adapter — the default container. |
+| [**`nyholm`**](https://github.com/hydra-foundation/nyholm) | Nyholm PSR-7 / PSR-17 adapter. The default message and factory implementation. |
+| [**`php-di`**](https://github.com/hydra-foundation/php-di) | PHP-DI PSR-11 adapter. The default container. |
 | [**`kernel`**](https://github.com/hydra-foundation/kernel) | Default composition root and HTTP plumbing. |
 | [**`session`**](https://github.com/hydra-foundation/session) | Session handling as PSR-15 middleware. |
 | [**`database`**](https://github.com/hydra-foundation/database) | Thin PDO-based data layer. |
@@ -30,7 +30,7 @@ A collection of experimental PHP packages that form the foundation of my PHP fra
 | [**`authorization`**](https://github.com/hydra-foundation/authorization) | Ability-based authorization on top of `auth`. |
 | [**`csrf`**](https://github.com/hydra-foundation/csrf) | CSRF protection as middleware. |
 | [**`console`**](https://github.com/hydra-foundation/console) | CLI surface, powered by Symfony Console. |
-| [**`app`**](https://github.com/hydra-foundation/app) | Application skeleton — the composition root every project starts from. |
+| [**`app`**](https://github.com/hydra-foundation/app) | Application skeleton. The composition root every project starts from. |
 
 ## Principles
 
