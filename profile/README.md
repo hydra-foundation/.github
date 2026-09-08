@@ -8,7 +8,7 @@
 
 </div>
 
-A collection of experimental PHP packages for my PHP framework, Hydra.
+A collection of experimental PHP packages that form the foundation of my PHP framework, Hydra.
 
 
 ## Packages
