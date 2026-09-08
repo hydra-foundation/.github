@@ -8,8 +8,6 @@
 
 </div>
 
----
-
 Hydrakit Packages is a collection of experimental PHP packages for my PHP framework, Hydra.
 
 
