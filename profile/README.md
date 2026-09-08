@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hydrakit Packages
+# Hydra Foundation
 
 [![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white)](https://www.php.net/)
 [![PSR](https://img.shields.io/badge/PSR-3%20·%207%20·%2011%20·%2014%20·%2015%20·%2017-4F5B93)](https://www.php-fig.org/psr/)
@@ -8,7 +8,7 @@
 
 </div>
 
-Hydrakit Packages is a collection of experimental PHP packages for my PHP framework, Hydra.
+A collection of experimental PHP packages for my PHP framework, Hydra.
 
 
 ## Packages
