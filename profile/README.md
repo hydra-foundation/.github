@@ -1,8 +1,6 @@
 <div align="center">
 
-# Hydra Foundation
-
-**A modular PHP framework built on PSR contracts — small packages, sharp boundaries, no magic.**
+# Hydrakit Packages
 
 [![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white)](https://www.php.net/)
 [![PSR](https://img.shields.io/badge/PSR-3%20·%207%20·%2011%20·%2014%20·%2015%20·%2017-4F5B93)](https://www.php-fig.org/psr/)
@@ -12,15 +10,10 @@
 
 ---
 
-Hydra is a PHP framework assembled from independent, single-purpose packages. Each
-codes against an interface rather than its neighbours, and the split between
-**framework mechanism** and **application policy** is deliberate: the core defines
-contracts, the packages supply mechanism, and your app wires them together at the
-composition root.
+Hydrakit is a collection of experimental PHP packages for my PHP framework, Hydra.
+
 
 ## Packages
-
-The dependency graph flows downward — `core` knows nothing of the layers above it.
 
 | Package | Role |
 | --- | --- |
@@ -47,7 +40,3 @@ The dependency graph flows downward — `core` knows nothing of the layers above
   and factories speak the [PHP-FIG](https://www.php-fig.org/) standards.
 - **Contracts over concretes.** Packages depend on interfaces; the app binds the
   implementations. Swapping one out is a one-line change at the composition root.
-- **Mechanism vs. policy.** The framework provides the *how*; your application owns
-  the *what*.
-- **Explicit beats implicit.** No facades, no auto-discovery. If a service is
-  available, you can point to the line that bound it.
