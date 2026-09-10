@@ -31,6 +31,7 @@ A collection of experimental PHP packages that form the foundation of my PHP fra
 | [**`csrf`**](https://github.com/hydra-foundation/csrf) | CSRF protection as middleware. |
 | [**`console`**](https://github.com/hydra-foundation/console) | CLI surface, powered by Symfony Console. |
 | [**`app`**](https://github.com/hydra-foundation/app) | Application skeleton. The composition root every project starts from. |
+| [**`admin`**](https://github.com/hydra-foundation/admin) | A composable admin backend for Hydra apps. |
 
 ## Principles
 
