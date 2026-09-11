@@ -30,7 +30,7 @@ END = "<!-- packages:end -->"
 # A package missing from this list still appears, alphabetically at the end,
 # so adding one to the monorepo needs no edit here to show up on the page.
 ORDER = (
-    "core", "http", "nyholm", "php-di", "kernel", "session", "database",
+    "core", "http", "nyholm", "php-di", "kernel", "session", "database", "cache",
     "validation", "view", "log", "event", "auth", "authorization", "csrf",
     "console", "admin",
 )

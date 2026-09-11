@@ -33,7 +33,7 @@ To work on the framework itself rather than with it, clone the monorepo below.
 monorepo: every package's source, one test suite, one release. It is where
 issues and pull requests belong.
 
-The sixteen package repositories in this organization are **generated**. A
+The seventeen package repositories in this organization are **generated**. A
 split workflow republishes each `packages/*` directory to its own repository on
 every push and every tag, which is what keeps `composer require hydrakit/http`
 working from Packagist. They are outputs: issues are disabled, a pull request
@@ -58,6 +58,7 @@ them with `composer require hydrakit/<name>`.
 | [**`kernel`**](https://github.com/hydra-foundation/hydra/tree/main/packages/kernel) | Hydra's default composition root and HTTP plumbing, kept in one place instead of copied per app. |
 | [**`session`**](https://github.com/hydra-foundation/hydra/tree/main/packages/session) | Session handling as PSR-15 middleware, behind split data and lifecycle interfaces. |
 | [**`database`**](https://github.com/hydra-foundation/hydra/tree/main/packages/database) | A thin PDO data-access seam and a raw-SQL migration runner. |
+| [**`cache`**](https://github.com/hydra-foundation/hydra/tree/main/packages/cache) | A small key/value store behind one contract, with the atomic counters rate limiting needs. |
 | [**`validation`**](https://github.com/hydra-foundation/hydra/tree/main/packages/validation) | Zero-dependency input validation: per-field rules, stateless, shareable. |
 | [**`view`**](https://github.com/hydra-foundation/hydra/tree/main/packages/view) | Native PHP templating with template inheritance and escape-by-convention safety. No compile step. |
 | [**`log`**](https://github.com/hydra-foundation/hydra/tree/main/packages/log) | A minimal PSR-3 logger that writes one plain-text line per record to a stream. |
