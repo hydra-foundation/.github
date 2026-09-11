@@ -1,0 +1,52 @@
+name: Packages
+
+# Keep the package table on the organization profile in step with the
+# monorepo. The table is generated from each package's composer.json
+# description, so a new package or a reworded one lands here on its own
+# rather than waiting for someone to remember this file.
+
+on:
+  schedule:
+    # Daily. The monorepo cannot trigger this without a cross-repo token, so
+    # the page trails a release by up to a day; run it by hand to skip the wait.
+    - cron: '17 6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/render_packages.py'
+      - 'profile/README.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: packages
+  cancel-in-progress: false
+
+jobs:
+  render:
+    name: Render the package table
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render
+        run: python3 scripts/render_packages.py
+
+      # Nothing to do on most runs: the script rewrites the file only when a
+      # description actually changed.
+      - name: Commit
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- profile/README.md; then
+            echo "no change"
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Regenerate the package table from the monorepo' \
+            -- profile/README.md
+          git push
