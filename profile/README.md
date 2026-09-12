@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hydra
+# Hydra Foundation
 
 [![Tests](https://github.com/hydra-foundation/hydra/actions/workflows/tests.yml/badge.svg)](https://github.com/hydra-foundation/hydra/actions/workflows/tests.yml)
 [![Split](https://github.com/hydra-foundation/hydra/actions/workflows/split.yml/badge.svg)](https://github.com/hydra-foundation/hydra/actions/workflows/split.yml)
