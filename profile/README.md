@@ -4,7 +4,7 @@
 
 [![Tests](https://github.com/hydra-foundation/hydra/actions/workflows/tests.yml/badge.svg)](https://github.com/hydra-foundation/hydra/actions/workflows/tests.yml)
 [![Split](https://github.com/hydra-foundation/hydra/actions/workflows/split.yml/badge.svg)](https://github.com/hydra-foundation/hydra/actions/workflows/split.yml)
-[![Latest release](https://img.shields.io/packagist/v/hydrakit/app?label=release)](https://packagist.org/packages/hydrakit/app)
+[![Latest release](https://img.shields.io/packagist/v/hydrakit/core?label=release)](https://packagist.org/packages/hydrakit/core)
 
 [![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white)](https://www.php.net/)
 [![PSR](https://img.shields.io/badge/PSR-3%20·%207%20·%2011%20·%2014%20·%2015%20·%2017-4F5B93)](https://www.php-fig.org/psr/)
