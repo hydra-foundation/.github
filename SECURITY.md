@@ -6,9 +6,9 @@ Use GitHub's private vulnerability reporting, which is enabled on both
 repositories that take reports:
 
 - **[Report in `hydra`](https://github.com/hydra-foundation/hydra/security/advisories/new)**
-  — for anything in a `hydrakit/*` package.
+  for anything in a `hydrakit/*` package.
 - **[Report in `app`](https://github.com/hydra-foundation/app/security/advisories/new)**
-  — for the skeleton.
+  for the skeleton.
 
 That opens a private advisory only you and I can read, and it keeps the whole
 exchange in one place. If you would rather not use it, email
@@ -48,7 +48,7 @@ separate code to fix.
 
 Reports that amount to "an application can configure this insecurely" are
 usually documentation problems rather than vulnerabilities, but send them
-anyway if the safe path is not the obvious one — a framework that makes the
+anyway if the safe path is not the obvious one. A framework that makes the
 insecure choice easy is a real defect.
 
 ## Supported versions

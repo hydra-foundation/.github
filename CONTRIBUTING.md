@@ -3,8 +3,8 @@
 Development happens in one place:
 **[hydra-foundation/hydra](https://github.com/hydra-foundation/hydra)**.
 
-If you arrived here from a package repository — `core`, `http`, `session`, or
-any of the other fourteen — that repository is **generated**. A split workflow
+If you arrived here from a package repository (`core`, `http`, `session`, or
+any of the other fourteen), that repository is **generated**. A split workflow
 republishes each `packages/*` directory from the monorepo on every push and
 every tag, which is what keeps `composer require hydrakit/*` working from
 Packagist. Issues are disabled there, a pull request against one cannot be
@@ -19,7 +19,7 @@ directly.
 
 This is an experimental personal project. Breaking changes land between any two
 versions, and the design is still moving, so an issue describing the problem is
-usually a better first step than a patch — it avoids work that a pending
+usually a better first step than a patch. It avoids work that a pending
 redesign would throw away.
 
 ## Working on the monorepo
