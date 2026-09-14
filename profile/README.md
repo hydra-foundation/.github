@@ -68,6 +68,7 @@ them with `composer require hydrakit/<name>`.
 | [**`csrf`**](https://github.com/hydra-foundation/hydra/tree/main/packages/csrf) | Synchronizer-token CSRF protection as PSR-15 middleware. |
 | [**`console`**](https://github.com/hydra-foundation/hydra/tree/main/packages/console) | The generic console commands every Hydra app needs, powered by Symfony Console. |
 | [**`admin`**](https://github.com/hydra-foundation/hydra/tree/main/packages/admin) | A composable admin backend for Hydra apps: declare a module, get routes and htmx screens. |
+| [**`throttle`**](https://github.com/hydra-foundation/hydra/tree/main/packages/throttle) | Request rate limiting as PSR-15 middleware, counted in a shared store. |
 | [**`app`**](https://github.com/hydra-foundation/app) | The application skeleton every Hydra project starts from. |
 <!-- packages:end -->
 
