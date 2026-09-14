@@ -2,8 +2,9 @@
 
 # Hydra Foundation
 
-[![Tests](https://github.com/hydra-foundation/hydra/actions/workflows/tests.yml/badge.svg)](https://github.com/hydra-foundation/hydra/actions/workflows/tests.yml)
-[![Split](https://github.com/hydra-foundation/hydra/actions/workflows/split.yml/badge.svg)](https://github.com/hydra-foundation/hydra/actions/workflows/split.yml)
+[![hydra tests](https://img.shields.io/github/actions/workflow/status/hydra-foundation/hydra/tests.yml?branch=main&label=hydra%20tests)](https://github.com/hydra-foundation/hydra/actions/workflows/tests.yml)
+[![app tests](https://img.shields.io/github/actions/workflow/status/hydra-foundation/app/tests.yml?branch=main&label=app%20tests)](https://github.com/hydra-foundation/app/actions/workflows/tests.yml)
+[![Split](https://github.com/hydra-foundation/hydra/actions/workflows/split.yml/badge.svg?branch=main)](https://github.com/hydra-foundation/hydra/actions/workflows/split.yml)
 [![Latest release](https://img.shields.io/packagist/v/hydrakit/core?label=release)](https://packagist.org/packages/hydrakit/core)
 
 [![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white)](https://www.php.net/)
