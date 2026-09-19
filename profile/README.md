@@ -16,6 +16,9 @@
 A collection of experimental PHP packages that form the foundation of my PHP
 framework, Hydra.
 
+**Documentation:** [hydra.williamhleucka.com](https://hydra.williamhleucka.com) — install, routing, templates,
+the admin, and a changelog of every release.
+
 > **Experimental.** A personal project, built in the open for my own use.
 > Breaking changes are expected between any two versions, without notice.
 
