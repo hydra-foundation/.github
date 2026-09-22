@@ -37,7 +37,7 @@ To work on the framework itself rather than with it, clone the monorepo below.
 monorepo: every package's source, one test suite, one release. It is where
 issues and pull requests belong.
 
-The seventeen package repositories in this organization are **generated**. A
+The twenty package repositories in this organization are **generated**. A
 split workflow republishes each `packages/*` directory to its own repository on
 every push and every tag, which is what keeps `composer require hydrakit/http`
 working from Packagist. They are outputs: issues are disabled, a pull request
@@ -70,7 +70,8 @@ them with `composer require hydrakit/<name>`.
 | [**`auth`**](https://github.com/hydra-foundation/hydra/tree/main/packages/auth) | Authentication for Hydra: identity only, behind a swappable guard. |
 | [**`authorization`**](https://github.com/hydra-foundation/hydra/tree/main/packages/authorization) | Ability-based authorization for Hydra, on top of hydrakit/auth. |
 | [**`csrf`**](https://github.com/hydra-foundation/hydra/tree/main/packages/csrf) | Synchronizer-token CSRF protection as PSR-15 middleware. |
-| [**`console`**](https://github.com/hydra-foundation/hydra/tree/main/packages/console) | The generic console commands every Hydra app needs, powered by Symfony Console. |
+| [**`console`**](https://github.com/hydra-foundation/hydra/tree/main/packages/console) | The generic console commands every Hydra app needs, and the contracts a command is written against. |
+| [**`symfony-console`**](https://github.com/hydra-foundation/hydra/tree/main/packages/symfony-console) | Symfony Console adapter: the default runner for Hydra commands, and the only package that names it. |
 | [**`admin`**](https://github.com/hydra-foundation/hydra/tree/main/packages/admin) | A composable admin backend for Hydra apps: declare a module, get routes and htmx screens. |
 | [**`mail`**](https://github.com/hydra-foundation/hydra/tree/main/packages/mail) | Outgoing mail behind one transport contract: SMTP for delivery, log and array transports so tests and local development never send. |
 | [**`throttle`**](https://github.com/hydra-foundation/hydra/tree/main/packages/throttle) | Request rate limiting as PSR-15 middleware, counted in a shared store. |
@@ -84,4 +85,10 @@ them with `composer require hydrakit/<name>`.
 - **Contracts over concretes.** Packages depend on interfaces; the app binds the
   implementations. Swapping one out is a one-line change at the composition root.
 - **One package, one job.** A package that needs a concrete vendor gets an adapter
-  of its own, so the seam stays swappable and the dependency stays optional.
+  of its own, so the seam stays swappable and the dependency stays optional. Three
+  do: `nyholm`, `php-di` and `symfony-console`. Seventeen require nothing outside
+  PHP and the PSR interfaces.
+
+The longer version — what goes in, what stays out, and the questions a design is
+checked against before it is built — is written down at
+[the ethos](https://hydra.williamhleucka.com/docs/ethos.html).
