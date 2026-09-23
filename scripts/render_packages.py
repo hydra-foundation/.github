@@ -32,7 +32,8 @@ END = "<!-- packages:end -->"
 ORDER = (
     "core", "http", "nyholm", "php-di", "kernel", "session", "database", "cache",
     "validation", "view", "log", "event", "auth", "authorization", "csrf",
-    "console", "symfony-console", "admin",
+    "console", "symfony-console", "admin", "mail", "throttle", "scheduler",
+    "queue",
 )
 
 

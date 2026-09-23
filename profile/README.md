@@ -37,7 +37,7 @@ To work on the framework itself rather than with it, clone the monorepo below.
 monorepo: every package's source, one test suite, one release. It is where
 issues and pull requests belong.
 
-The twenty package repositories in this organization are **generated**. A
+The twenty-two package repositories in this organization are **generated**. A
 split workflow republishes each `packages/*` directory to its own repository on
 every push and every tag, which is what keeps `composer require hydrakit/http`
 working from Packagist. They are outputs: issues are disabled, a pull request
@@ -75,6 +75,8 @@ them with `composer require hydrakit/<name>`.
 | [**`admin`**](https://github.com/hydra-foundation/hydra/tree/main/packages/admin) | A composable admin backend for Hydra apps: declare a module, get routes and htmx screens. |
 | [**`mail`**](https://github.com/hydra-foundation/hydra/tree/main/packages/mail) | Outgoing mail behind one transport contract: SMTP for delivery, log and array transports so tests and local development never send. |
 | [**`throttle`**](https://github.com/hydra-foundation/hydra/tree/main/packages/throttle) | Request rate limiting as PSR-15 middleware, counted in a shared store. |
+| [**`scheduler`**](https://github.com/hydra-foundation/hydra/tree/main/packages/scheduler) | Scheduled work from one cron entry: due checks, overlap locks and bounded batches. |
+| [**`queue`**](https://github.com/hydra-foundation/hydra/tree/main/packages/queue) | Work that outlives the request: a job contract, a database queue with retries, drained by the scheduler. |
 | [**`app`**](https://github.com/hydra-foundation/app) | The application skeleton every Hydra project starts from. |
 <!-- packages:end -->
 
@@ -86,7 +88,7 @@ them with `composer require hydrakit/<name>`.
   implementations. Swapping one out is a one-line change at the composition root.
 - **One package, one job.** A package that needs a concrete vendor gets an adapter
   of its own, so the seam stays swappable and the dependency stays optional. Three
-  do: `nyholm`, `php-di` and `symfony-console`. Seventeen require nothing outside
+  do: `nyholm`, `php-di` and `symfony-console`. Nineteen require nothing outside
   PHP and the PSR interfaces.
 
 The longer version — what goes in, what stays out, and the questions a design is
