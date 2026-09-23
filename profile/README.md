@@ -8,7 +8,7 @@
 [![Latest release](https://img.shields.io/packagist/v/hydrakit/core?label=release)](https://packagist.org/packages/hydrakit/core)
 
 [![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white)](https://www.php.net/)
-[![PSR](https://img.shields.io/badge/PSR-3%20·%207%20·%2011%20·%2014%20·%2015%20·%2017-4F5B93)](https://www.php-fig.org/psr/)
+[![PSR](https://img.shields.io/badge/PSR-3%20·%207%20·%2011%20·%2014%20·%2015%20·%2017%20·%2020-4F5B93)](https://www.php-fig.org/psr/)
 [![License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)
 
 </div>
@@ -81,7 +81,7 @@ them with `composer require hydrakit/<name>`.
 ## Principles
 
 - **PSR all the way down.** HTTP messages, containers, middleware, logging, events,
-  and factories speak the [PHP-FIG](https://www.php-fig.org/) standards.
+  factories and clocks speak the [PHP-FIG](https://www.php-fig.org/) standards.
 - **Contracts over concretes.** Packages depend on interfaces; the app binds the
   implementations. Swapping one out is a one-line change at the composition root.
 - **One package, one job.** A package that needs a concrete vendor gets an adapter
