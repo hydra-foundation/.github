@@ -77,6 +77,7 @@ them with `composer require hydrakit/<name>`.
 | [**`throttle`**](https://github.com/hydra-foundation/hydra/tree/main/packages/throttle) | Request rate limiting as PSR-15 middleware, counted in a shared store. |
 | [**`scheduler`**](https://github.com/hydra-foundation/hydra/tree/main/packages/scheduler) | Scheduled work from one cron entry: due checks, overlap locks and bounded batches. |
 | [**`queue`**](https://github.com/hydra-foundation/hydra/tree/main/packages/queue) | Work that outlives the request: a job contract, a database queue with retries, drained by the scheduler. |
+| [**`filesystem`**](https://github.com/hydra-foundation/hydra/tree/main/packages/filesystem) | File storage behind one contract: a private disk served through the app, a public disk served by the web server, and keys that never trust the client's filename. |
 | [**`app`**](https://github.com/hydra-foundation/app) | The application skeleton every Hydra project starts from. |
 <!-- packages:end -->
 
