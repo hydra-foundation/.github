@@ -33,7 +33,7 @@ ORDER = (
     "core", "http", "nyholm", "php-di", "kernel", "session", "database", "cache",
     "validation", "view", "log", "event", "auth", "authorization", "csrf",
     "console", "symfony-console", "admin", "mail", "throttle", "scheduler",
-    "queue",
+    "queue", "filesystem", "broadcast",
 )
 
 
