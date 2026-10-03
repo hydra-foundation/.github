@@ -79,6 +79,7 @@ them with `composer require hydrakit/<name>`.
 | [**`queue`**](https://github.com/hydra-foundation/hydra/tree/main/packages/queue) | Work that outlives the request: a job contract, a database queue with retries, drained by the scheduler. |
 | [**`filesystem`**](https://github.com/hydra-foundation/hydra/tree/main/packages/filesystem) | File storage behind one contract: a private disk served through the app, a public disk served by the web server, and keys that never trust the client's filename. |
 | [**`broadcast`**](https://github.com/hydra-foundation/hydra/tree/main/packages/broadcast) | Tell other processes that something changed: a publisher over Redis pub/sub, listen tokens, and an SSE hub that fans broadcasts out to browsers. |
+| [**`seo`**](https://github.com/hydra-foundation/hydra/tree/main/packages/seo) | Meta tags, sitemaps and Atom feeds for Hydra: built from plain values, escaped once, every URL absolute. |
 | [**`app`**](https://github.com/hydra-foundation/app) | The application skeleton every Hydra project starts from. |
 <!-- packages:end -->
 
