@@ -37,7 +37,7 @@ To work on the framework itself rather than with it, clone the monorepo below.
 monorepo: every package's source, one test suite, one release. It is where
 issues and pull requests belong.
 
-The twenty-four package repositories in this organization are **generated**. A
+The twenty-seven package repositories in this organization are **generated**. A
 split workflow republishes each `packages/*` directory to its own repository on
 every push and every tag, which is what keeps `composer require hydrakit/http`
 working from Packagist. They are outputs: issues are disabled, a pull request
@@ -92,9 +92,9 @@ them with `composer require hydrakit/<name>`.
 - **Contracts over concretes.** Packages depend on interfaces; the app binds the
   implementations. Swapping one out is a one-line change at the composition root.
 - **One package, one job.** A package that needs a concrete vendor gets an adapter
-  of its own, so the seam stays swappable and the dependency stays optional. Three
-  do: `nyholm`, `php-di` and `symfony-console`. Twenty-one require nothing outside
-  PHP and the PSR interfaces.
+  of its own, so the seam stays swappable and the dependency stays optional. Four
+  do: `nyholm`, `php-di`, `symfony-console` and `commonmark`. Twenty-three require
+  nothing outside PHP and the PSR interfaces.
 
 The longer version — what goes in, what stays out, and the questions a design is
 checked against before it is built — is written down at
