@@ -41,8 +41,8 @@ Before pushing:
 composer qa        # phpstan, php-cs-fixer, phpunit
 ```
 
-CI runs the suite on PHP 8.2 through 8.5, plus static analysis and style. All
-four version jobs are required.
+CI runs the suite on PHP 8.4 and 8.5, plus static analysis and style. Both
+version jobs are required.
 
 ## Conventions
 
